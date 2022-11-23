@@ -1,3 +1,7 @@
+# This is done using databricks
+# Read a csv file that contains bad records, separate the bad records and store in Azure storage container
+# You have to mount the storage container first inorder to store the files in the container
+
 # Import required packages
 from pyspark.sql.functions import col 
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
