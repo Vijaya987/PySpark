@@ -8,7 +8,7 @@ from pyspark.sql.functions import monotonically_increasing_id
 # Create spark context
 spark = SparkSession.builder.master("local[1]").appName("Excel").getOrCreate()
 
-# Read excel file
+# Read excel file with multiple sheets
 pdf = pd.read_excel('C:/Work_area/ScalaSbt/UserStory7/SourceFile/Spark_US7.xlsx', sheet_name=None)
 print(pdf)
 
